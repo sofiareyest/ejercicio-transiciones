@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 01 uso de SVG</title>
+
+    <style>
+        .navegation {
+            width: 100vw;
+            max-width: 90%;
+            margin: 0 auto;
+            height: auto;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid grey;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        
+        .navegation__logo {
+            width: 8vw;
+            height: 8vh;
+            /* background: red; */
+            margin: 20px 0;
+        }
+        
+        .navigation__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+        }
+        
+        a:link,
+        a:active,
+        a:visited {
+            text-decoration: none;
+            font-family: monospace;
+            font-size: 20px;
+            padding: 8px 20px 8px 20px;
+            margin: 0 10px;
+            color: black;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            font-family: monospace;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navegation">
+        <div class="navegation__logo">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg width="100%" height="100%" viewBox="0 0 363 363" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+                    <title>Rectangle</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Artboard" transform="translate(-50.000000, -18.000000)" fill="#FF6B6C">
+                            <polygon id="Rectangle" transform="translate(231.500000, 199.500000) rotate(-270.000000) translate(-231.500000, -199.500000) " points="50.5 18.5 168.633601 114.544232 412.5 18.5 231.5 199.5 412.5 380.5 168.633601 312.931773 50.5 380.5"></polygon>
+                        </g>
+                    </g>
+                </svg>
+        </div>
+
+        <ul class="navigation__list">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+
+
+    </nav>
+
+
+</body>
+
+</html>
